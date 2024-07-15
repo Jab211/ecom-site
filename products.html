@@ -9,6 +9,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="stylesheet" href="css/products.css">
+        <link rel="stylesheet" href="css/headerAndFooter.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -20,18 +21,47 @@
     </head>
 
     <body>
-      <header class="bg-dark p-3">
-        <nav>
-          <div class="div1">
-            <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
-            <a href="registration.html">Register</a>
-            <a href="products.html">Products</a>
-            <a href="checkout.html">Checkout</a>
-          </div>
-          
-            </nav>
-        <!-- place navbar here -->
+      <header>
+        <div id="allHeaderLinks">
+            <div id="headerLogoLink">
+                <a href="" id="headerCompanyName">Polaroid</a>
+            </div>
+            <div id="headerProductLinks" style="flex-grow: 1; text-align: center;">
+                <a href="#" id="headerWhatsNew" class="arrow">What's New</a>
+                <a href="#" id="headerInstantCameras" class="arrow">Instant Cameras</a>
+                <a href="#" id="headerInstantFilm" class="arrow">Instant Film</a>
+            </div>
+            <div id="headerOtherLinks">
+                <a href="#" id="headerAccount">Account</a>
+                <a href="#" id="headerShoppingBag">Shopping Bag</a>
+            </div>
+        </div>
+        <div class="dropdown" id="dropdownWhatsNew">
+            <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <img src="/mnt/data/image.png" alt="Polaroid X Magnum">
+                    <p>Polaroid X Magnum<br>Celebrating the storytellers elevating the instant photography craft.</p>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" id="dropdownInstantCameras">
+            <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <img src="/mnt/data/image.png" alt="Instant Camera 1">
+                    <p>Explore our instant camera collection.</p>
+                </div>
+                <!-- Add more dropdown items as needed -->
+            </div>
+        </div>
+        <div class="dropdown" id="dropdownInstantFilm">
+            <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <img src="/mnt/data/image.png" alt="Instant Film 1">
+                    <p>Find the perfect film for your camera.</p>
+                </div>
+                <!-- Add more dropdown items as needed -->
+            </div>
+        </div>
     </header>
         <main class="container">
             <div id="cardcontainer">
@@ -89,13 +119,50 @@
         
 
         </main>
-        <footer class="bg-dark text-white p-3">
-            <p>creator Lorem, ipsum dolor.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, obcaecati.</p>
-            <p>Terms/service</p>
-
-            <!-- place footer here -->
-        </footer>
+        <footer id="footer">
+          <div id="footerTop">
+              <div>
+                  <input type="email" placeholder="Your email address">
+                  <button>Sign up</button>
+              </div>
+              <p>Get our latest updates and 10% off your first order</p>
+          </div>
+          <div id="footerMain">
+              <div class="footerColumn">
+                  <h3>Quick Links</h3>
+                  <a href="#">Gift Cards</a>
+                  <a href="#">About Us</a>
+                  <a href="#">More Products</a>
+                  <a href="#">Collaborations</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Contact Us</a>
+              </div>
+              <div class="footerColumn">
+                  <h3>Programs</h3>
+                  <a href="#">Affiliate Program</a>
+                  <a href="#">Our Brands</a>
+                  <a href="#">Polaroid Loyalty Program</a>
+                  <a href="#">Customer Service</a>
+              </div>
+          </div>
+          <div class="footerBottom">
+              <div>
+                  <a href="#">Terms of Use Website</a>
+                  <a href="#">Online Purchase Conditions</a>
+                  <a href="#">Review Terms & Conditions</a>
+                  <a href="#">Product Recalls</a>
+                  <a href="#">US Social Responsibility</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Cookie Policy</a>
+                  <a href="#">Content Sharing Policy</a>
+                  <a href="#">Accessibility</a>
+                  <a href="#">Gift Card Conditions</a>
+                  <a href="#">Loyalty Terms</a>
+                  <a href="#">Warranty Policy</a>
+                  <a href="#">Polaroid Sale</a>
+              </div>
+          </div>
+      </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -108,5 +175,40 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const whatsNewLink = document.getElementById('headerWhatsNew');
+              const instantCamerasLink = document.getElementById('headerInstantCameras');
+              const instantFilmLink = document.getElementById('headerInstantFilm');
+  
+              const dropdownWhatsNew = document.getElementById('dropdownWhatsNew');
+              const dropdownInstantCameras = document.getElementById('dropdownInstantCameras');
+              const dropdownInstantFilm = document.getElementById('dropdownInstantFilm');
+  
+              whatsNewLink.addEventListener('mouseenter', () => {
+                  dropdownWhatsNew.style.display = 'flex';
+              });
+  
+              whatsNewLink.addEventListener('mouseleave', () => {
+                  dropdownWhatsNew.style.display = 'none';
+              });
+  
+              instantCamerasLink.addEventListener('mouseenter', () => {
+                  dropdownInstantCameras.style.display = 'flex';
+              });
+  
+              instantCamerasLink.addEventListener('mouseleave', () => {
+                  dropdownInstantCameras.style.display = 'none';
+              });
+  
+              instantFilmLink.addEventListener('mouseenter', () => {
+                  dropdownInstantFilm.style.display = 'flex';
+              });
+  
+              instantFilmLink.addEventListener('mouseleave', () => {
+                  dropdownInstantFilm.style.display = 'none';
+              });
+          });
+      </script>
     </body>
 </html>

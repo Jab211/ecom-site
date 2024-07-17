@@ -1,0 +1,168 @@
+        /* Header Styling */
+        #allHeaderLinks {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+        }
+
+        #headerCompanyName,
+        #headerWhatsNew,
+        #headerInstantCameras,
+        #headerInstantFilm,
+        #headerAccount,
+        #headerShoppingBag {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        #headerLogoLink {
+            display: flex;
+            align-items: center;
+        }
+
+        #headerCompanyName {
+            font-size: 36px;
+            font-weight: bolder;
+        }
+
+        .arrow::after {
+            content: '\25BC';
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 62px; /* Adjusted to align with the desired position */
+            width: 100%;
+            background-color: white;
+            padding: 20px 40px;
+            z-index: 1;
+        }
+
+        #headerProductLinks a:hover+.dropdown,
+        .dropdown:hover {
+            display: flex;
+        }
+
+        .dropdown-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .dropdown-item {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dropdown img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .dropdown p {
+            font-size: 14px;
+            color: black;
+        }
+
+        /* Footer Styling */
+        #footer {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            color: black;
+            margin-top: auto;
+        }
+
+        #footerTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #footerTop div {
+            display: flex;
+            align-items: center;
+        }
+
+        #footerTop input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 300px;
+        }
+
+        #footerTop button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        #footerMain {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        .footerColumn {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .footerColumn h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footerColumn p,
+        .footerColumn a {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .footerColumn a:hover {
+            text-decoration: underline;
+        }
+
+        .footerBottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footerBottom div {
+            display: flex;
+            align-items: center;
+        }
+
+        .footerBottom a {
+            margin-right: 15px;
+        }
+
+        .paymentMethods img {
+            margin-right: 10px;
+            height: 30px;
+        }

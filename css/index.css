@@ -3,6 +3,14 @@ display: flex;
 justify-content: space-between;
 padding: 1rem;
 } */
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
+}
+.color-font {
+  color: black;
+}
+
+.size-p {
+  width: 40%;
+  font-size: 1.5rem;
 }

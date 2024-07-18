@@ -7,6 +7,7 @@
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/headerAndFooter.css">
     <style>
         body {
             background-color: #f8f9fa;
@@ -49,71 +50,65 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="px-3 py-2 text-bg-dark border-bottom navbar-bg">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img src="./images/logoipsum-332.svg" alt="" />
-              </a>
-  
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                    Orders
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                    Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#people-circle"></use>
-                    </svg>
-                    Account
-                  </a>
-                </li>
-                <li>
-                  <a href="./cart.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#people-circle"></use>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      class="bi bi-cart3"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <header>
+    <div id="allHeaderLinks">
+      <div id="headerLogoLink">
+          <a href="" id="headerCompanyName">Polaroid</a>
+      </div>
+      <div id="headerProductLinks" style="flex-grow: 1; text-align: center;">
+          <a href="products-printer.html" id="headerWhatsNew" class="arrow">What's New</a>
+          <a href="products.html" id="headerInstantCameras" class="arrow">Instant Cameras</a>
+          <a href="products-films.html" id="headerInstantFilm" class="arrow">Instant Film</a>
+          <a href="accessories.html" id="headerInstantFilm" class="arrow">Accessories</a>
+      </div>
+      <div id="headerOtherLinks">
+          <a href="login.html" id="headerAccount">Account</a>
+          <a href="checkout.html" id="headerShoppingBag">Shopping Bag</a>
+      </div>
+  </div>
+  <div class="dropdown" id="dropdownWhatsNew">
+      <div class="dropdown-content">
+          <div class="dropdown-item">
+              <img src="images/printer1.webp" alt="Polaroid X Magnum">
+              <p>Polaroid Hi·Print 2x3 Generation 2 Starter Set</p>
           </div>
-        </div>
-        <div class="px-3 py-2 border-bottom mb-3">
-          <div class="container d-flex flex-wrap justify-content-center">
-            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-            </form>
-  
-            <div class="text-end">
-              <a href="./login.html"><button type="button" class="btn btn-light text-dark me-2">Login</button></a>
-              <a href="./registration.html"><button type="button" class="btn btn-primary navbar-bg">Sign-up</button></a>
-            </div>
+          <div class="dropdown-item">
+            <img src="images/printer2.webp" alt="Polaroid X Magnum">
+            <p>Polaroid Hi·Print 2x3 case</p>
           </div>
-        </div>
-      </header>
+          <div class="dropdown-item">
+            <img src="images/printer3.webp" alt="Polaroid X Magnum">
+            <p>Polaroid Hi·Print 2x3 Paper Cartridge Generation 2 – 20 Sheets</p>
+          </div>
+      </div>
+  </div>
+  <div class="dropdown" id="dropdownInstantCameras">
+      <div class="dropdown-content">
+          <div class="dropdown-item">
+              <img src="images/img6.webp" alt="Instant Camera 1">
+              <p>Polaroid Now Generation 2 i-Type Instant Camera</p>
+          </div>
+          <div class="dropdown-item">
+            <img src="images/img2.webp" alt="Instant Camera 1">
+            <p>Polaroid Now Generation 2 i-Type Instant Camera</p>
+          </div>
+          <div class="dropdown-item">
+            <img src="images/img4.webp" alt="Instant Camera 1">
+            <p>Polaroid Now Generation 2 i-Type Instant Camera</p>
+          </div>
+          <!-- Add more dropdown items as needed -->
+      </div>
+  </div>
+  <div class="dropdown" id="dropdownInstantFilm">
+      <div class="dropdown-content">
+          <div class="dropdown-item">
+              <img src="images/film1.webp" alt="Instant Film 1">
+              <p>Color i-Type Film</p>
+          </div>
+          <!-- Add more dropdown items as needed -->
+      </div>
+  </div>
+  </header>
 
 <main>
 <div class="container checkout-container">
@@ -181,13 +176,85 @@ Product 3
 </div>
 </main>
 
-<footer class="bg-dark text-white p-3">
-<div class="container text-center">
-<p>Creator: Lorem, ipsum dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, obcaecati.</p>
-<p>Terms of Service</p>
-</div>
+<footer id="footer">
+  <div id="footerTop">
+      <div>
+          <input type="email" placeholder="Your email address">
+          <button>Sign up</button>
+      </div>
+      <p>Get our latest updates and 10% off your first order</p>
+  </div>
+  <div id="footerMain">
+      <div class="footerColumn">
+          <h3>Quick Links</h3>
+          <a href="#">Gift Cards</a>
+          <a href="#">About Us</a>
+          <a href="#">More Products</a>
+          <a href="#">Collaborations</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact Us</a>
+      </div>
+      <div class="footerColumn">
+          <h3>Programs</h3>
+          <a href="#">Affiliate Program</a>
+          <a href="#">Our Brands</a>
+          <a href="#">Polaroid Loyalty Program</a>
+          <a href="#">Customer Service</a>
+      </div>
+  </div>
+  <div class="footerBottom">
+      <div>
+          <a href="#">Terms of Use Website</a>
+          <a href="#">Online Purchase Conditions</a>
+          <a href="#">Review Terms & Conditions</a>
+          <a href="#">Product Recalls</a>
+          <a href="#">US Social Responsibility</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Content Sharing Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Gift Card Conditions</a>
+          <a href="#">Loyalty Terms</a>
+          <a href="#">Warranty Policy</a>
+          <a href="#">Polaroid Sale</a>
+      </div>
+  </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const whatsNewLink = document.getElementById('headerWhatsNew');
+      const instantCamerasLink = document.getElementById('headerInstantCameras');
+      const instantFilmLink = document.getElementById('headerInstantFilm');
+
+      const dropdownWhatsNew = document.getElementById('dropdownWhatsNew');
+      const dropdownInstantCameras = document.getElementById('dropdownInstantCameras');
+      const dropdownInstantFilm = document.getElementById('dropdownInstantFilm');
+
+      whatsNewLink.addEventListener('mouseenter', () => {
+          dropdownWhatsNew.style.display = 'flex';
+      });
+
+      whatsNewLink.addEventListener('mouseleave', () => {
+          dropdownWhatsNew.style.display = 'none';
+      });
+
+      instantCamerasLink.addEventListener('mouseenter', () => {
+          dropdownInstantCameras.style.display = 'flex';
+      });
+
+      instantCamerasLink.addEventListener('mouseleave', () => {
+          dropdownInstantCameras.style.display = 'none';
+      });
+
+      instantFilmLink.addEventListener('mouseenter', () => {
+          dropdownInstantFilm.style.display = 'flex';
+      });
+
+      instantFilmLink.addEventListener('mouseleave', () => {
+          dropdownInstantFilm.style.display = 'none';
+      });
+  });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
